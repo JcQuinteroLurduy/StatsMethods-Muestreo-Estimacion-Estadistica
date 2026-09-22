@@ -1,60 +1,17 @@
-================================================================================
-Librerías necesarias/utilizadas en el proyecto
-================================================================================
-PyQt5>=5.15 Creación de interfaces graficas
-pandas>=1.5 manipulación y gestion de datos
-numpy>=1.23 Cálculo númerico
-scipy>=1.9 Algebra y estadistica
-matplotlib>=3.6 Generación de graficos
-openpyxl>=3.0 Lectura de .xlsx y .cvs (excel)
-=================================================================================
+# Interfaz gráfica de escritorio
+PyQt5>=5.15
 
+# Manipulación y gestión de datos
+pandas>=1.5
 
-Pruebas de hipotesis: ( Database completa )
+# Cálculo numérico
+numpy>=1.23
 
-=================================================================================
-PRUEBA 1 | T Student en UNA MUESTRA vs miu(μ)0 = 50%
-================================================================================
-  Objetivo   : Determinar si el promedio nacional de incorrectas es 50%
-  H0(nula)   : mu = 50%
-  H1(alt)    : mu != 50%  (bilateral)
-  Estadistico: t = -2.5177
-  p-valor    : 0.011885
-  Decision   : RECHAZA H0  (p < 0.05)
-  Conclusion : El promedio real (49.3144%) es estadisticamente distinto de 50%.
-               Con 2,096 registros. Aunque la diferencia parezca pequeña, es
-               estadisticamente significativa.
+# Álgebra y estadística
+scipy>=1.9
 
-================================================================================
-PRUEBA 2 | T-student UNA MUESTRA vs miu(μ)0 = 45%
-=================================================================================
-  Objetivo   : Verificar si el promedio supera el umbral del 45%
-  H0         : mu = 45%
-  H1         : mu > 45%  (unilateral derecha)
-  Estadistico: t = 15.8440
-  p-valor    : 0.000000
-  Decision   : RECHAZA H0  (p < 0.05)
-  Conclusion : Existe evidencia contundente de que el porcentaje promedio de
-               respuestas incorrectas supera ampliamente el 45%.
-               El valor t=15.84 indica una diferencia muy alejada del valor
-               hipotetico planteado.
+# Generación de gráficos
+matplotlib>=3.6
 
-================================================================================
-PRUEBA 3 | T student DOS MUESTRAS INDEPENDIENTES
-		U. de Antioquia |vs| U. Pontificia Bolivariana
-==================================================================================
-  Objetivo   : Se va a realizar comparar directamente las dos instituciones (igualdad)
-  H0         : mu_Antioquia == mu_Bolivariana (busqueda de igualdad)
-  H1         : mu_Antioquia != mu_Bolivariana  (Busqueda de diferencia, bilateral)
-  Grupo 1    : UNIVERSIDAD DE ANTIOQUIA
-               n=141  media=39.1277%
-  Grupo 2    : UNIVERSIDAD PONTIFICIA BOLIVARIANA
-               n=123  media=48.3171%
-  Diferencia : 9.1894 puntos porcentuales
-  Estadistico: t = -7.3563
-  p-valor    : 0.000000
-  Decision   : RECHAZA H0  (p < 0.05)
-  Conclusion : La diferencia de 9.19 puntos entre ambas instituciones es
-               estadisticamente significativa y no atribuible al azar.
-
-miu media pobl
+# Lectura de archivos .xlsx (Excel)
+openpyxl>=3.0
