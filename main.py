@@ -1,13 +1,3 @@
-"""
-main.py — Punto de entrada de StatSampler Pro.
-
-Uso:
-    python main.py
-
-Dependencias:
-    pip install PyQt5 pandas numpy scipy matplotlib openpyxl
-"""
-
 import sys
 import os
 
