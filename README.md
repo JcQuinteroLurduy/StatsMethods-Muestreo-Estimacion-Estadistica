@@ -9,7 +9,7 @@ Construida con PyQt5, pandas, numpy, scipy y matplotlib.
 
 ```bash
 # 1. Clonar / descomprimir el proyecto
-cd stat_app
+cd StatsMethods - Analisis de Muestro y Estimación
 
 # 2. Crear entorno virtual (recomendado)
 python -m venv venv
@@ -63,7 +63,7 @@ stat_app/
 | Paso | Pestaña | Acción |
 |------|---------|--------|
 | 1 | **Datos** | Carga CSV / Excel / TXT con el botón "📂 Cargar archivo" |
-| 2 | Barra superior | Elige **variable numérica** y (opcionalmente) **variable categórica** |
+| 2 | Barra superior | Elige **variable numérica** y opcionalmente **variable categórica** |
 | 3 | **Fase 1** | Pulsa " Fase 1" → estadísticos poblacionales + histograma |
 | 4 | **Fase 2** | Ajusta n y k, pulsa " Generar Muestras" → tabla + gráfico comparativo |
 | 5 | **Fases 3 & 4** | Pulsa " Calcular Estimaciones" → puntual + intervalos de confianza |
